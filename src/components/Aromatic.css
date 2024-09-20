@@ -1,0 +1,106 @@
+.aromatic-container {
+    padding: 20px;
+    background: linear-gradient(135deg, #ffecd2, #fcb69f); 
+    text-align: center;
+}
+
+.aromatic-banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.aromatic-card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.aromatic-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    width: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.aromatic-card:hover {
+    background-color: #fbc2eb; 
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.aromatic-card:hover .aromatic-card-text {
+    transform: translateY(0);
+    opacity: 1;
+
+}
+
+.aromatic-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.aromatic-card-text {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.aromatic-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin:5px 0px;
+}
+
+.aromatic-card p {
+    font-size: 1rem;
+    color: #555;
+    margin:5px 0px;
+
+}
+
+.aromatic-card-price {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #e63946;
+}
+
+.aromatic-add-to-cart {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.aromatic-add-to-cart:hover {
+    background-color: #ff5722;
+}
+
+@media (max-width: 768px) {
+    .aromatic-card {
+        width: 200px;
+    }
+}
+
+@media (max-width: 575px) {
+    .aromatic-card-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}

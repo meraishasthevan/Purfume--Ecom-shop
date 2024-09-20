@@ -1,0 +1,80 @@
+.floral-container {
+    padding: 20px;
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  }
+  
+  .floral-banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .floral-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .floral-card {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.6s ease, box-shadow 0.3s ease;
+    width: 300px;
+    position: relative;
+  }
+  .floral-card h3{
+    margin:5px 0px;
+  }
+  .floral-card p{
+    margin:8px 0px;
+  }
+  
+  
+  .floral-card:hover {
+    transform: rotateY(360deg); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .floral-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.6s ease;
+  }
+  
+  .floral-card:hover .floral-image {
+    transform: scale(1.1); 
+  }
+  
+  .add-to-cart-btn {
+    background-color: #ff5f5f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #ff4040;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .floral-card {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .floral-grid {
+      flex-direction: column;
+    }
+  }
+  

@@ -1,0 +1,116 @@
+.cardsection-header {
+    text-align: center;
+    margin-bottom: 40px; 
+}
+
+.cardsection-header p {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    color: #193a43;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "Cambria Math", sans-serif;
+    letter-spacing: 0.3em;
+}
+
+.cardsection-header h1 {
+    margin-top: 10px;
+    font-size: 2.5rem;
+    color: #193a43;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: "Cambria Math", sans-serif;
+}
+
+.cardsection-container {
+    background: #b898c1; 
+    padding: 50px 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    width: 90%; 
+    margin: auto; 
+}
+
+.cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+}
+
+.sec-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center; 
+    position: relative; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sec-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sec-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-seccontent {
+    padding: 20px;
+}
+
+.card-seccontent span {
+    font-size: 1.5rem;
+    color: #193a43;
+    margin-bottom: 10px;
+    display: block;
+    font-family: Cambria, sans-serif;
+}
+
+.card-seccontent p {
+    font-size: 1.2rem;
+    color: #193a43;
+    margin: 15px 0;
+}
+
+.label {
+    background-color: #ff6f61;
+    color: white;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px; 
+    right: 0px;
+}
+
+.card-seccontent .add-to-cart {
+    background-color: #ff6f61; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px; 
+}
+
+.add-to-cart:hover {
+    background-color: #e55347; 
+}
+
+@media (max-width: 768px) {
+    .cardsection-header h1 {
+        font-size: 2rem;
+    }
+
+    .card-seccontent span {
+        font-size: 1.2rem;
+    }
+    .card-seccontent p {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,82 @@
+.spicy-container {
+    padding: 20px;
+    background: linear-gradient(135deg, #000428 0%, #004e92 50%, #ec008c 100%); 
+ }
+  
+  .spicy-banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .spicy-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .spicy-card {
+    background: linear-gradient(135deg, #7b4397 0%, #dc2430 100%);     
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.3s ease, background-color 0.5s ease;
+    width: 300px;
+    position: relative;
+  }
+  .spicy-card h3{
+    margin:5px 0px;
+    
+  }
+  .spicy-card p{
+    margin:5px 0px;
+    color:white;
+  }
+  
+  .spicy-card:hover {
+    transform: rotateX(20deg) rotateY(20deg); 
+    background-color: #ff9999; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .spicy-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.5s ease;
+  }
+  
+  .spicy-card:hover .spicy-image {
+    transform: scale(1.1) rotate(10deg);
+  }
+  
+  .add-to-cart-btn {
+    background: linear-gradient(135deg, #000428 0%, #004e92 50%, #ec008c 100%); 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #ff4040;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .spicy-card {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .spicy-grid {
+      flex-direction: column;
+    }
+  }
+  

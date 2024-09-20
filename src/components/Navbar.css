@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    font-size: 28px;
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+.hamburger-icon:hover {
+    transform: rotate(90deg); 
+}
+
+.nav-logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-logo img {
+    height: 85px;
+    transition: transform 0.3s ease;
+}
+
+.nav-logo img:hover {
+    transform: scale(1.1); 
+}
+
+.nav-icons {
+    display: flex;
+    gap: 20px;
+    flex-shrink: 0; 
+}
+
+.icon {
+    font-size: 22px;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon:hover {
+    color: #ff3e96; 
+    transform: scale(1.2); 
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.nav-links.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.nav-link {
+    font-size: 20px;
+    color:white;
+    text-decoration: none;
+    padding-bottom: 5px;
+    transition: color 0.3s ease, border-bottom 0.3s ease, transform 0.3s ease;
+    font-family: 'Cambria Math', serif;
+}
+
+.nav-link:hover {
+    color: #ff3e96;
+    border-bottom: 2px solid #ff3e96;
+    transform: translateY(-2px); 
+}
+.cart-icon {
+    position: relative; 
+}
+
+.cart-count {
+    position: absolute; 
+    top: -15px; 
+    right: -10px; /* Adjust horizontal position */
+    background-color: #ff3e96; /* Background color for the count */
+    color: black; /* Text color */
+    border-radius: 50%; /* Circular shape */
+    padding: 4px 8px; /* Padding for the count */
+    font-size: 14px; /* Font size */
+    font-weight: bold; /* Bold text */
+    min-width: 20px; /* Minimum width for consistent size */
+    text-align: center; /* Center the text */
+    transition: transform 0.3s ease; /* Smooth transform on hover */
+}
+
+.cart-icon:hover .cart-count {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: flex;
+    }
+
+    .nav-icons {
+        display: none; 
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-logo img {
+        height: 50px;
+    }
+
+    .icon {
+        font-size: 18px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+}
+
+
