@@ -6,7 +6,7 @@ import './Review.css';
 
 function Review() {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,  
@@ -15,6 +15,24 @@ function Review() {
     autoplaySpeed: 3000,
     centerMode: true, 
     centerPadding: '0', 
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false, 
+        },
+      },
+    ],
   };
 
   return (

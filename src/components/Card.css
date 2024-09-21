@@ -38,6 +38,17 @@
 .card:hover img {
     transform: scale(1.1);
 }
+@media (max-width:768px){
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+        gap: 20px;
+        padding:0px;
+        justify-items: center;
+        align-items: center;
+        margin:0px 10px;
+    }
+}
 @media (max-width:575px){
     .card-container {
         display: grid;
@@ -46,5 +57,12 @@
         padding:0px;
         justify-items: center;
         align-items: center;
+    }
+    .card img {
+        width: 75%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease;
+        margin:auto;
     }
 }

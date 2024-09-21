@@ -79,7 +79,7 @@ function Aquatic() {
             </div>
         <div className="aquatic-container">
             {allAquatic.map(product => (
-                <div key={product.id} className="card">
+                <div key={product.id} className="aqu-card">
                     <div className="card-inner">
                         <div className="card-front">
                             <img src={product.image} alt={product.name} />

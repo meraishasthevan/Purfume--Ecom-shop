@@ -139,7 +139,11 @@
     }
 
     .nav-icons {
-        display: none; 
+        display: flex;
+        gap:15px;  
+    }
+    .cart-icon {
+        font-size: 20px; 
     }
 }
 
@@ -155,6 +159,15 @@
     .nav-link {
         font-size: 16px;
     }
+    .cart-icon {
+        font-size: 18px; /* Adjust the cart icon size further for smaller screens */
+    }
+    .cart-count {
+        top: -10px; /* Adjust the position for the count on mobile */
+        right: -8px; /* Adjust the position for the count on mobile */
+        font-size: 12px; /* Adjust the font size for the count on mobile */
+    }
+
 }
 
 

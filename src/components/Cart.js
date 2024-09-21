@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { removeFromCart, updateQuantity, clearCart } from "./cartSlice"; // Import necessary actions
+import { removeFromCart, updateQuantity, clearCart } from "./cartSlice"; 
 import './Cart.css';
 
 function Cart() {
     const dispatch = useDispatch();
-    const cartItems = useSelector(state => state.cart.items); // Get cart items from Redux
+    const cartItems = useSelector(state => state.cart.items); 
     const [isFormVisible, setFormVisible] = useState(false);
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');

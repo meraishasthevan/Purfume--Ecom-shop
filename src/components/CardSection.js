@@ -14,28 +14,32 @@ function CardSection() {
         {
             id: 1,
             image: 'https://ramsonsperfumes.com/cdn/shop/files/PremiumMen20mlPlainTile1copy_540x.jpg?v=1711778882',
-            name: 'Ramsons Premium For Men-Roar, Enigma, Closer, Passion 80ML',
+            name:"New Arrivals",
+            description: 'Ramsons Premium For Men-Roar, Enigma, Closer, Passion 80ML',
             price: 454,
             label: '-30%'
         },
         {
             id: 2,
             image: 'https://ramsonsperfumes.com/cdn/shop/files/EXOTICAGLAMBOTTLE1080X1080_540x.jpg?v=1712567364',
-            name: 'Exotica Glam - Eau De Parfum, Daisy, Deiser Combo Collection - 100ML',
+            name:"New Arrivals",
+            description: 'Exotica Glam - Eau De Parfum, Daisy, Deiser Combo Collection - 100ML',
             price: 455,
             label: '-30%'
         },
         {
             id: 3,
             image: 'https://ramsonsperfumes.com/cdn/shop/files/VIBRANT_7_540x.jpg?v=1692854296',
-            name: 'Vibrant Luxury Collection - Eau De Parfume - 70Ml - Set Of Collection 7',
+            name:"New Arrivals",
+            description: 'Vibrant Luxury Collection - Eau De Parfume - 70Ml - Set Of Collection 7',
             price: 967,
             label: '-30%'
         },
         {
             id: 4,
             image: 'https://ramsonsperfumes.com/cdn/shop/files/PremiumWomen20mlPlainTile1copy_540x.jpg?v=1711779548',
-            name: 'Ramsons Premium For Women - Blush Victoria, Daisy, Desire 80ML Combo',
+            name:"New Arrivals",
+            description: 'Ramsons Premium For Women - Blush Victoria, Daisy, Desire 80ML Combo',
             price: 454,
             label: '-30%'
         },
@@ -55,6 +59,7 @@ function CardSection() {
                             <img src={card.image} alt={card.name} className="card-image" />
                             <div className="card-seccontent">
                                 <span>{card.name}</span>
+                                <span>{card.description}</span>
                                 <p>Price: ₹{card.price}</p>
                                 <span className="label">{card.label}</span>
                                 <button className="add-to-cart" onClick={() => handleAddToCart(card)}>Add to Cart</button>
